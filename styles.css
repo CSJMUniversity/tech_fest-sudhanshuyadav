@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #007f93;
+    --sen-color: #034345;
+    --text-color: #000;
+    --bg-color: #fff;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 10px 0;
+
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bg-color);
+}
+nav ul{
+    display: flex;
+   gap: 30px;
+    
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+  font-size: 1.2rem;
+  color: var(--bg-color);
+  text-decoration: none;
+}
+.menu_icon{
+    display: none;
+}
+@media (max-width:650px) {
+    nav{
+        padding: 50px;
+    }
+    .logo{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--bg-color);
+}
+    nav ul{
+        flex-direction: column;
+    }
+}
+@media (max-width:1100px) {
+    .home{
+        flex-direction: column;
+        padding: 100px;
+    }
+    .about{
+        flex-direction: column;
+        padding: 300px;
+    }
+    .images_grid img{
+       display: none;
+        
+    }
+    .location_conatiner{
+        flex-direction: column;
+        padding: 600px;
+        gap: 50px;
+       
+    }
+    .title_about span{
+        color: var(--bg-color);
+    }
+
+}
+@media (max-width:700px) {
+    .home{
+        flex-direction: column;
+        padding: 500px;
+    }
+    .about{
+        flex-direction: column;
+        padding: 500px;
+    }
+    .images_grid img{
+        display: none;
+        width: 240px;
+        height: 200px;
+    }  
+
+}
+.home{
+    display: flex;
+    padding: 6rem;
+    justify-content: space-around;
+}
+.home_right{
+    text-align: center;
+    padding: 4rem 4rem;
+}
+.home_right img{
+    width: 400px;
+    height: 400px;
+    
+}
+.home_left {
+    text-align: center;
+}
+.home_left h3{
+    font-size: 3rem;
+    font-weight: 700
+}
+span{
+    color: var(--main-color);
+}
+.home_left p{
+    font-size: 1.2rem;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.home_left #btn{
+    color:var(--bg-color);
+    background-color: var(--main-color);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    
+}
+.home_left a{
+    text-decoration: none;
+}
+.about{
+    background-color: var(--sen-color);
+    padding: 100px;
+}
+.about{
+    display: flex;
+}
+.images_grid img{
+    width: 640px;
+    height: 600px;
+    border-radius: 2rem;
+}
+.about_of_temple{
+    padding-left: 4rem;
+}
+.title_about h2{
+    font-size: 3rem;
+    color: var(--bg-color);
+}
+.about_of_temple p{
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    margin-top: 10px;
+}
+.history{
+    height: 100vh;
+    background: url(assets/lord-krishna-radha-rani-iskcon-temple-181940974.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.history .title{
+    margin-top: 100px;
+    font-size: 4rem;
+    color: var(--bg-color);
+}
+.history p{
+    font-size: 1.3rem;
+    font-weight:500 ;
+    margin-top: 200px;
+    color: var(--bg-color);
+    width: 400px;
+    text-align: start;
+    margin-left: 30px;
+}
+
+.location .title{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.location span{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.location_conatiner{
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem;
+}
+.location_conatiner p{
+    font-size: 1.5rem;
+    width: 500px;
+}
+footer{
+    background-color: var(--main-color);
+    padding: 2rem;
+}
+footer .title{
+   text-align: center;
+}
+footer .title h1{
+    font-size: 2rem;
+    color: var(--bg-color)
+}
